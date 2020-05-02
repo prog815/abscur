@@ -1,1 +1,1 @@
-from .pred_obr import *
+import .pred_obr

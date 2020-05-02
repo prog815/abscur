@@ -1,12 +1,14 @@
 from setuptools import setup, find_packages
 from os.path import join, dirname
 
+import abscur
+
 setup(
     name='abscur',
-    version='0.1.8',
+    version='0.1.9',
     description='Библиотека доступа к данным проекта <Абсолютный курс>',
     packages=find_packages(),
     long_description=open(join(dirname(__file__), 'README.md')).read(),
-    author_email='eavprog@gmail.com',
-    zip_safe=False
+    include_package_data=True,
+    author_email='eavprog@gmail.com'
 )

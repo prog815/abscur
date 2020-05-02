@@ -1,1 +1,1 @@
-import ./pred_obr
+import pred_obr

@@ -1,2 +1,2 @@
 import numpy as np
-from pred_obr import *
+from .pred_obr import *

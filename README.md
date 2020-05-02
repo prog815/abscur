@@ -3,7 +3,7 @@
 
 # Установка
 ```
-! pip install git+https://github.com/prog815/abscur>
+! pip install git+https://github.com/prog815/abscur
 
 import abscur
 ```

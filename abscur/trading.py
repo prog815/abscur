@@ -1,3 +1,5 @@
+import numpy as np
+
 def get_order_set(ohlc_df,tp=0.01,sl=0.005,dist=5):
     """
     Функция считает ряды срабатывания ордеров на buy и на sell

@@ -2,6 +2,49 @@ import numpy as np
 
 # ----------------------------------------------------------------------
 
+def sim_full_order(ohlc_df,tp=0.01,sl=0.005,dist=5):
+    """
+    Прогон полного ордера
+
+    Открытие ордеров должно происходить в точке Open тика
+    
+    Закрытие должно происходить по достижению TakeProfit 
+    (с прибылью) или StopLoss (с убытком)
+    
+    Параметры:
+    ohlc_df - Pandas DataFrame со столбцами Open, High и Low
+    tp - уровень прибыли в долях от 1-цы
+    sl - уровень убытков в долях от 1-цы
+    dist - максимальное кол-во тиков жизни ордера до убыточного закрытия
+
+    Возвращает легкую копию ohlc_df с дополнительными столбцами:
+    'buy_set','sell_set' - ряды ордеров на покупку и продажу. Каждый ряд содержит: 
+        1 - ордер открытый в этот тик прибыльный
+        0 - ордер в этот тик был убыточным
+    'buy_res','sell_res' - ряды с результатами изменений отработки ордеров на покупку и продажу
+    'all_res' - ряд с результатами относительных изменений одновременной отработки 
+    """
+    res = ohlc_df.copy(deep=False)
+    
+    buy_set,sell_set = get_order_set(res,tp,sl,dist)
+    
+    res['buy_set'] = buy_set
+    res['sell_set'] = sell_set
+    
+    buy_res = order_res_to_profit(buy_set,tp,sl)
+    sell_res = order_res_to_profit(sell_set,tp,sl)
+    
+    res['buy_res'] = buy_res
+    res['sell_res'] = sell_res
+    
+    all_res = buy_res + sell_res
+    
+    res['all_res'] = all_res
+    
+    return res
+
+# ----------------------------------------------------------------------
+
 def get_order_set(ohlc_df,tp=0.01,sl=0.005,dist=5):
     """
     Функция считает ряды срабатывания ордеров на buy и на sell

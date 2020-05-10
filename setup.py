@@ -5,7 +5,7 @@ import abscur
 
 setup(
     name='abscur',
-    version='0.1.19',
+    version='0.1.20',
     description='Библиотека доступа к данным проекта <Абсолютный курс>',
     packages=find_packages(),
     long_description=open(join(dirname(__file__), 'README.md')).read(),

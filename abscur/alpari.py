@@ -169,8 +169,6 @@ def get_cot_hist(topic:str,instruments,diap:str,tick:str='1d'):
     import pandas as pd
     import datetime
 
-    years = get_instruments_years(topic,instrument)
-    
     diaps = {'1m':1,
              '2m':2,
              '3m':3,
@@ -199,6 +197,7 @@ def get_cot_hist(topic:str,instruments,diap:str,tick:str='1d'):
     
     def get_one_instr(instr:str):
         res = pd.DataFrame()
+        years = get_instruments_years(topic,instr)
         for year in filter(lambda y: y >= start_mon[:4],years):
             for zip_name in filter(lambda fn: fn>= start_mon, get_zip_list(topic,instr,year)):
                 df = get_zip(topic,instr,year,zip_name)

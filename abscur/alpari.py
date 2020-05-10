@@ -16,7 +16,7 @@ def get_page_links(url):
     from urllib.request import urlopen
     from bs4 import BeautifulSoup
     page = urlopen(url)
-    soup = BeautifulSoup(page)
+    soup = BeautifulSoup(page,features="lxml")
     return [link.get('href') for link in soup.find_all('a')]
 
 # -------------------------------------------

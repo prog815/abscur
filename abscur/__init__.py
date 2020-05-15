@@ -3,7 +3,7 @@ from . import trading
 from . import optim
 from . import alpari
 
-class ParAbsConverter:
+class PairAbsConverter:
     """
     Класс преобразования между парными курсами и абсолютными
 

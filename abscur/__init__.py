@@ -3,6 +3,34 @@ from . import trading
 from . import optim
 from . import alpari
 
+# -----------------------------------------------------------------------
+
+def get_abs_curses():
+    """
+    Возвращает абсолютные курсы в виде объекта Pandas.DataFrame
+    Сами курсы расположены по ссылке https://docs.google.com/spreadsheets/d/1lKtuxBLBBWX9_7_JA3M4jJ3U0nGQcla3HHyG_m7SMdE/edit#gid=1476745765
+    """
+    url = "https://docs.google.com/spreadsheets/d/1lKtuxBLBBWX9_7_JA3M4jJ3U0nGQcla3HHyG_m7SMdE/export?format=csv&id=1lKtuxBLBBWX9_7_JA3M4jJ3U0nGQcla3HHyG_m7SMdE&gid=1476745765"
+    import pandas as pd
+    data = pd.read_csv(url,decimal=',',parse_dates=[0],index_col=0,dayfirst=True)
+    data.index.name = 'Date'
+    return data
+
+# -----------------------------------------------------------------------
+
+def get_pairs_curses():
+    """
+    Возвращает курсы валютных пар в виде объекта Pandas.DataFrame
+    Сами курсы расположены по ссылке https://docs.google.com/spreadsheets/d/1lKtuxBLBBWX9_7_JA3M4jJ3U0nGQcla3HHyG_m7SMdE/edit#gid=1416147692
+    """
+    url = "https://docs.google.com/spreadsheets/d/1lKtuxBLBBWX9_7_JA3M4jJ3U0nGQcla3HHyG_m7SMdE/export?format=csv&id=1lKtuxBLBBWX9_7_JA3M4jJ3U0nGQcla3HHyG_m7SMdE&gid=1416147692"
+    import pandas as pd
+    data = pd.read_csv(url,decimal=',',parse_dates=[0],index_col=0,dayfirst=True)
+    data.index.name = 'Date'
+    return data
+
+# -----------------------------------------------------------------------
+
 class PairAbsConverter:
     """
     Класс преобразования между парными курсами и абсолютными

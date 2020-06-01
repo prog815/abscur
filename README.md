@@ -10,6 +10,12 @@ import abscur
 
 # Состав
 
+## Методы
+
+get_abs_curses() - Возвращает абсолютные курсы в виде объекта Pandas.DataFrame 
+
+get_pairs_curses() - Возвращает курсы валютных пар в виде объекта Pandas.DataFrame
+
 ## Классы
 
 PairAbsConverter - Класс преобразования между парными курсами и абсолютными

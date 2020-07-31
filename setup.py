@@ -2,11 +2,10 @@ from setuptools import setup, find_packages
 from os.path import join, dirname
 
 import abscur
-import genetic
 
 setup(
     name='abscur',
-    version='0.1.24',
+    version='0.1.25',
     description='Библиотека доступа к данным проекта <Абсолютный курс>',
     packages=find_packages(),
     long_description=open(join(dirname(__file__), 'README.md')).read(),

@@ -6,7 +6,7 @@ import genetic
 
 setup(
     name='abscur',
-    version='0.1.23',
+    version='0.1.24',
     description='Библиотека доступа к данным проекта <Абсолютный курс>',
     packages=find_packages(),
     long_description=open(join(dirname(__file__), 'README.md')).read(),

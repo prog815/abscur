@@ -94,10 +94,30 @@ class ListGenetic:
         import matplotlib.pyplot as plt
         import numpy as np
         
+        def getQM(data,N=20):
+            L = len(data)
+            dN = L//N
+            gl = L//10
+            x = list(range(dN,L,dN))
+            if x[-1] != L-1:
+                x.append(L-1)
+            q1 = np.array(x)
+            m = np.array(x)
+            q2 = np.array(x)
+            for i in range(len(x)):
+                q1[i],m[i],q2[i] = np.quantile(data[(max(0,x[i]-gl)):(x[i]+1)],(0.1,0.5,0.9))
+            return x,q1,m,q2
+
         for param in params:
+            plt.figure(figsize=(10,6))
             v = [h['new'][param] for h in self._hist]
-            plt.plot(v)
-            plt.title(param)
+            plt.plot(v,'y.',label='<'+param+'>')
+            x,q1,m,q2 = getQM(v)
+            plt.plot(x,q2,':',label='q2')
+            plt.plot(x,m,'*k-',label='m')
+            plt.plot(x,q1,':',label='q1')
+            plt.title('параметр <' + param + '>')
+            plt.legend()
             plt.show()
 
 

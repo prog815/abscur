@@ -162,7 +162,7 @@ class ListGenetic:
             return self._get_gen_params(self._pop.mean(axis=0))
         
         if method == 'pop_q':
-            return self._get_gen_params(np.quantile( m._pop,0.5,axis=0))
+            return self._get_gen_params(np.quantile( self._pop,0.5,axis=0))
 
         raise Exception('неверный метод')
 

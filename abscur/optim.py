@@ -4,7 +4,6 @@ import pandas as pd
 class ListGenetic:
     """
     Класс генетической оптимизации для списочных параметров
-
     Аргументы конструктора:
         pop_size - размер популяции
         mutate_koef - коэффициент мутации
@@ -35,7 +34,6 @@ class ListGenetic:
     def fit(self,epochs=10):
         """
         Запуск генетической оптимизации.
-
         Аргументы:
             epochs - кол-во эпох оптимизации
         """
@@ -110,7 +108,6 @@ class ListGenetic:
     def plot_hist_new(self,params=('quality',)):
         """
         Вывод истории оптимизации
-
         Аргументы:
             params - список параметров для вывода
         """
@@ -134,7 +131,8 @@ class ListGenetic:
         for param in params:
             plt.figure(figsize=(10,6))
             v = [h['new'][param] for h in self._hist]
-            plt.plot(v,'y.',label='<'+param+'>')
+            ind = list(range(0,len(v),max(1,int(np.ceil(len(v)/500)))))
+            plt.plot(ind,np.array(v)[ind],'y.',label='<'+param+'>')
             x,q1,m,q2 = getQM(v)
             plt.plot(x,q2,':',label='q2')
             plt.plot(x,m,'*k-',label='m')
@@ -146,7 +144,6 @@ class ListGenetic:
     def getBestParams(self,method='pop_mean',**kwargs):
         """
         Выдача лучших параметров
-
         Аргументы:
             method - метод извлечения
                 варианты:

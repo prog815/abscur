@@ -1,8 +1,9 @@
+# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
 
     def print_link(text,link):
-        md_code = f"[{text}]({link})"
+        md_code = f"-[{text}]({link})"
         display(Markdown(md_code))
 
     

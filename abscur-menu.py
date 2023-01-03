@@ -1,4 +1,5 @@
 # %% [code]
+# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
     
@@ -17,6 +18,7 @@ def print_menu():
 ## Расчеты на Kaggle:
 - [Источник данных с абсолютными курсами](https://www.kaggle.com/code/eavprog/abscur-data) 
 - [Последние абсолютные курсы](https://www.kaggle.com/code/eavprog/abscur-posled-kurs)
+- [Связь валют на графах через корреляцию](https://www.kaggle.com/code/eavprog/abscur-svyas-valut)
 - [Рейтинг абсолютной доходности](https://www.kaggle.com/eavprog/abscur-reyting-dohod)
 - [Абсолютные курсы голубых фишек Московской биржи](https://www.kaggle.com/code/eavprog/mmvb-abscur-blue-fishki)
 """

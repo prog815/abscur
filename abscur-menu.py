@@ -19,6 +19,7 @@ def print_menu():
 ## Абсолютные валютные курсы:
 - [Источник данных с абсолютными курсами](https://www.kaggle.com/code/eavprog/abscur-data) 
 - [Последние абсолютные курсы](https://www.kaggle.com/code/eavprog/abscur-posled-kurs)
+- [Графики истории абсолютных валютных курсов](https://www.kaggle.com/eavprog/abscur-hist)
 - [Стоимость Абса](https://www.kaggle.com/eavprog/abscur-stoimost-absa)
 - [Связь валют на графах через корреляцию](https://www.kaggle.com/code/eavprog/abscur-svyas-valut)
 - [Рейтинг абсолютной доходности](https://www.kaggle.com/eavprog/abscur-reyting-dohod)

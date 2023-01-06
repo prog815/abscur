@@ -8,11 +8,11 @@ def print_menu():
 
 ## Представительства проекта:
 [**БЛОГ**](http://www.abscur.ru) - 
-[**ВКонтакте**](https://vk.com/abscur) - 
-[**WhatsUp**](https://chat.whatsapp.com/KrNJXAKizPxDlDSjYfdpQs) - 
+[**VK**](https://vk.com/abscur) - 
+[**WhatsApp**](https://chat.whatsapp.com/KrNJXAKizPxDlDSjYfdpQs) - 
 [**Viber**](https://invite.viber.com/?g2=AQB63y7Cm%2BNJK0tNZW%2F9kI00M6Wr8HuZ7XeamzN4jZCve8Aq9%2FiD3DY56Eqcf7dc) - 
 [**Telegram**](https://t.me/AbsCur) - 
-[**Одноклассники**](https://ok.ru/group/53547043520717) - 
+[**ОК**](https://ok.ru/group/53547043520717) - 
 [**GitHub**](https://github.com/prog815/abscur) - 
 [**YouTube**](https://www.youtube.com/playlist?list=PLG1V24vhSKo6MamGtgm2oTkDZHeHBHNFW) - 
 [**Smart-Lab**](https://smart-lab.ru/my/eavpred/) - 

@@ -2,6 +2,7 @@
 # %% [code]
 # %% [code]
 # %% [code]
+# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
     
@@ -36,6 +37,7 @@ def print_menu():
 
 ## Товары Московской биржи
 - [Абсолютные курсы товаров Мосбиржи](https://www.kaggle.com/eavprog/mmvb-abscur-tovar)
+- [Рейтинг товаров Московской биржи по коэффициенту Шарпа (долларовый и абсолютный)](https://www.kaggle.com/eavprog/abscur-tovar-sharp)
 
 ---
 

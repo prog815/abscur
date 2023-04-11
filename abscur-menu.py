@@ -3,6 +3,7 @@
 # %% [code]
 # %% [code]
 # %% [code]
+# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
     
@@ -29,6 +30,9 @@ def print_menu():
 - [Рейтинг абсолютной доходности](https://www.kaggle.com/eavprog/abscur-reyting-dohod)
 - [Рейтинг валют по абсолютным курсам и коэффициенту Шарпа](https://www.kaggle.com/eavprog/abscur-sharp)
 - [Рейтинг абсолютной стабильности валют](https://www.kaggle.com/eavprog/abscur-reit-stabil)
+
+## Парные валютные курсы
+- [Графики истории парных валютных курсов](https://www.kaggle.com/eavprog/abscur-par-hist)
 
 ## Голубые фишки Московской биржи
 - [Абсолютные курсы голубых фишек Московской биржи](https://www.kaggle.com/code/eavprog/mmvb-abscur-blue-fishki)

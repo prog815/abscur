@@ -1,9 +1,3 @@
-# %% [code]
-# %% [code]
-# %% [code]
-# %% [code]
-# %% [code]
-# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
     
@@ -22,6 +16,7 @@ def print_menu():
 [**VC.ru**](https://vc.ru/u/262921-aleksey-enin)
 
 ## Абсолютные валютные курсы:
+- [О проекте](https://www.kaggle.com/eavprog/abscur-about)
 - [Источник данных с абсолютными курсами](https://www.kaggle.com/code/eavprog/abscur-data) 
 - [Последние абсолютные курсы](https://www.kaggle.com/code/eavprog/abscur-posled-kurs)
 - [Графики истории абсолютных валютных курсов](https://www.kaggle.com/eavprog/abscur-hist)

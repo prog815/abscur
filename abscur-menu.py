@@ -1,7 +1,10 @@
+# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
     
     text = """# Оглавление проекта \"Абсолютный валютный курс\" 
+
+<center>![Проект "Абсолютный валютный курс"](https://i.ibb.co/cL0D27B/abscur-znak.jpg)</center>
 
 ## Представительства проекта:
 [**БЛОГ**](http://www.abscur.ru) - 

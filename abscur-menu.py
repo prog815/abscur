@@ -16,7 +16,8 @@ def print_menu():
 [**GitHub**](https://github.com/prog815/abscur) - 
 [**YouTube**](https://www.youtube.com/playlist?list=PLG1V24vhSKo6MamGtgm2oTkDZHeHBHNFW) - 
 [**Smart-Lab**](https://smart-lab.ru/my/eavpred/) - 
-[**VC.ru**](https://vc.ru/u/262921-aleksey-enin)
+[**VC.ru**](https://vc.ru/u/262921-aleksey-enin) - 
+[**Kaggle**](https://www.kaggle.com/code/eavprog/abscur-about)
 
 ## Абсолютные валютные курсы:
 - [О проекте](https://www.kaggle.com/eavprog/abscur-about)

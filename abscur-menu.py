@@ -1,4 +1,3 @@
-# %% [code]
 def print_menu():
     from IPython.display import Markdown, display
     
@@ -16,7 +15,7 @@ def print_menu():
 [**GitHub**](https://github.com/prog815/abscur) - 
 [**YouTube**](https://www.youtube.com/playlist?list=PLG1V24vhSKo6MamGtgm2oTkDZHeHBHNFW) - 
 [**Smart-Lab**](https://smart-lab.ru/my/eavpred/) - 
-[**VC.ru**](https://vc.ru/u/262921-aleksey-enin) - 
+[**VC.ru**](https://vc.ru/s/1826351-absolyutnyy-kurs-valyut) - 
 [**Kaggle**](https://www.kaggle.com/code/eavprog/abscur-about)
 
 ## Абсолютные валютные курсы:
